@@ -11,7 +11,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 public class Main implements ApplicationListener {
 
     // Constant rows and columns of the sprite sheet
-    private static final int FRAME_COLS = 8, FRAME_ROWS = 1;
+    private static final int FRAME_COLS = 6, FRAME_ROWS = 5;
 
     // Objects used
     Animation<TextureRegion> walkAnimation; // Must declare frame type (TextureRegion)
@@ -25,7 +25,7 @@ public class Main implements ApplicationListener {
     public void create() {
 
         // Load the sprite sheet as a Texture
-        walkSheet = new Texture(Gdx.files.internal("spritesheet.png"));
+        walkSheet = new Texture(Gdx.files.internal("example_spritesheet.png"));
 
         // Use the split utility method to create a 2D array of TextureRegions. This is
         // possible because this sprite sheet contains frames of equal size and they are
